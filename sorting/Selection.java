@@ -12,7 +12,7 @@ public class Selection {
             arr[mini]=arr[i];
             arr[i]=temp;
         }
-    }                                                                   //13 67 34 23 100
+    }                                                                   
     public static void main(String[] args) {
         Selection s1=new Selection();
         Scanner sc=new Scanner(System.in);
