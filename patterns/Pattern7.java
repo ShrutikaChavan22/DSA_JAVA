@@ -1,9 +1,15 @@
+//    *
+//   ***
+//  *****
+// *******
+   
 package patterns;
 import java.util.*;
 
 public class Pattern7 {
 
     public void pattern7(int n) {
+        
 
         for(int i = 1; i <= n; i++) {
 

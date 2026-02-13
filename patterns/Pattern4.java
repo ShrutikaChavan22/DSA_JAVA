@@ -1,7 +1,7 @@
-/* 1 
-   2 2
-   3 3 3
-   4 4 4 4 */
+// /* 1 
+//    2 2
+//    3 3 3
+//    4 4 4 4 */
 import java.util.*;
 public class Pattern4{
     public void pattern4(int n){
