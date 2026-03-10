@@ -1,0 +1,37 @@
+import java.util.*;
+public class QuickSortExample {
+    static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    static int partition(int[] arr, int st, int end) {
+        int idx = st - 1,pivot = arr[end];
+        for (int j = st; j < end; j++) {
+            if (arr[j] <= pivot) {
+                idx++;
+                swap(arr, j, idx);
+            }
+        }
+        idx++;
+        swap(arr, end, idx);
+        return idx;
+    }
+    static void quicksort(int[] arr, int st, int end) {
+        if (st < end) {
+            int pivIdx = partition(arr, st, end);
+            quicksort(arr, st, pivIdx - 1);
+            quicksort(arr, pivIdx + 1, end);
+        }
+    }
+    public static void main(String args[]) {
+        int[] arr = {10, 78, 39, 29, 45};
+
+        quicksort(arr, 0, arr.length - 1);
+
+        System.out.println("Sorted array:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+}
