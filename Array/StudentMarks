@@ -1,0 +1,11 @@
+//Give an array of marks of students,if the mark of any student is less than 35 print its roll number.[roll no here refers to the index of array].
+public class studentMarks{
+    public static void main(String[] args) {
+        int[] marks={35,60,40,29,13};
+        for(int i=0;i<marks.length;i++){
+            if(marks[i]<35){
+                System.out.println(i+" ");
+            }
+        }
+    }
+}
