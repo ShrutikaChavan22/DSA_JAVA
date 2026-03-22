@@ -20,7 +20,7 @@ public class ReverseArray{
             i++;
             j--;
         }
-        System.out.println("Array Elements Are:");
+        System.out.println("After reversing Array:");
         r1.display(arr,n);
     }
 }
